@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/service_tests/example_01_health_01_min_monthly_basis_test.rs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/service_tests/example_01_health_05_factor_compound_test.rs" charset="UTF-8" />
+  </component>
+</project>
