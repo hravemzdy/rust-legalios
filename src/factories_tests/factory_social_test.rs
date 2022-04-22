@@ -1,8 +1,6 @@
 #[cfg(test)]
 
 mod factories_tests {
-    #[macro_use(crate::test_factory_social)]
-
     crate::test_factory_social! (test_examples_2009,
             test_period_2009_01: 2009, 1, 0,
             test_period_2009_02: 2009, 2, 0,

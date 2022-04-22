@@ -2,7 +2,6 @@
 
 mod service_tests {
     //#[cfg(test_report)]
-    #[macro_use(crate::report_test_examples_int_social)]
     crate::report_test_examples_int_social!(
         test_examples_report,
         social_07,
@@ -12,7 +11,6 @@ mod service_tests {
         2022
     );
 
-    #[macro_use(crate::test_examples_log_int_social)]
     crate::test_examples_log_int_social! (test_log_examples_2010_2022, "03_Social_07_MarginIncomeEmp", |x: &BoxSocialProps| {x.margin_income_emp()},
         test_examples_2010: 2010,
         [

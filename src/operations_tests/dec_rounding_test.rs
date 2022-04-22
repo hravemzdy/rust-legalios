@@ -25,7 +25,6 @@ mod operations_tests {
         }
     }
 
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_dec_rounding!(dec_round_up_should_return_rounded_decimal,
             |t: Decimal| operations_round::dec_round_up(t),
             test_pos_55_6: "5,5", "6",
@@ -39,7 +38,6 @@ mod operations_tests {
             test_neg_25_3: "-2,5", "-3",
             test_neg_55_6: "-5,5", "-6",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_dec_rounding!(dec_round_down_should_return_rounded_decimal,
             |t: Decimal| operations_round::dec_round_down(t),
             test_pos_55_5: "5,5", "5",
@@ -53,7 +51,6 @@ mod operations_tests {
             test_neg_25_2: "-2,5", "-2",
             test_neg_55_5: "-5,5", "-5",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_dec_rounding!(dec_round_norm_should_return_rounded_decimal,
             |t: Decimal| operations_round::dec_round_norm(t),
             test_pos_55_6: "5,5", "6",
@@ -67,7 +64,6 @@ mod operations_tests {
             test_neg_25_3: "-2,5", "-3",
             test_neg_55_6: "-5,5", "-6",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_dec_rounding!(dec_near_round_up_should_return_rounded_decimal,
             |t: Decimal| operations_round::dec_near_round_up100(t),
             test_pos_550_600: "550", "600",
@@ -81,7 +77,6 @@ mod operations_tests {
             test_neg_250_300: "-250", "-300",
             test_neg_550_600: "-550", "-600",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_dec_rounding!(dec_near_round_down_should_return_rounded_decimal,
             |t: Decimal| operations_round::dec_near_round_down100(t),
             test_pos_550_500: "550", "500",
@@ -95,7 +90,6 @@ mod operations_tests {
             test_neg_250_200: "-250", "-200",
             test_neg_550_500: "-550", "-500",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_dec_rounding!(dec_round_up_50_should_return_rounded_decimal,
             |t: Decimal| operations_round::dec_round_up50(t),
             test_pos_5125_550: "5,125", "5,50",
@@ -159,7 +153,6 @@ mod operations_tests {
             test_neg_2050_250: "-2,05", "-2,50",
             test_neg_5050_550: "-5,05", "-5,50",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_dec_rounding!(dec_round_up_25_should_return_rounded_decimal,
             |t: Decimal| operations_round::dec_round_up25(t),
             test_pos_5125_525: "5,125", "5,25",
@@ -243,7 +236,6 @@ mod operations_tests {
             test_neg_2050_225: "-2,050", "-2,25",
             test_neg_5050_525: "-5,050", "-5,25",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_dec_rounding!(dec_round_up_01_should_return_rounded_decimal,
             |t: Decimal| operations_round::dec_round_up01(t),
             test_pos_5555_556: "5,555", "5,56",
@@ -267,7 +259,6 @@ mod operations_tests {
             test_neg_2005_201: "-2,005", "-2,01",
             test_neg_5005_501: "-5,005", "-5,01",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_dec_rounding!(dec_round_down_50_should_return_rounded_decimal,
             |t: Decimal| operations_round::dec_round_down50(t),
             test_pos_5125_500: "5,125", "5,00",
@@ -331,7 +322,6 @@ mod operations_tests {
             test_neg_2050_200: "-2,05", "-2,00",
             test_neg_5050_500: "-5,05", "-5,00",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_dec_rounding!(dec_round_down_25_should_return_rounded_decimal,
             |t: Decimal| operations_round::dec_round_down25(t),
             test_pos_5125_500: "5,125", "5,00",
@@ -415,7 +405,6 @@ mod operations_tests {
             test_neg_2050_200: "-2,050", "-2,00",
             test_neg_5050_500: "-5,050", "-5,00",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_dec_rounding!(dec_round_down_01_should_return_rounded_decimal,
             |t: Decimal| operations_round::dec_round_down01(t),
             test_pos_5555_555: "5,555", "5,55",
@@ -439,7 +428,6 @@ mod operations_tests {
             test_neg_2005_200: "-2,005", "-2,00",
             test_neg_5005_500: "-5,005", "-5,00",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_dec_rounding!(dec_round_norm_50_should_return_rounded_decimal,
             |t: Decimal| operations_round::dec_round_norm50(t),
             test_pos_5125_500: "5,125", "5,00",
@@ -503,7 +491,6 @@ mod operations_tests {
             test_neg_2050_200: "-2,05", "-2,00",
             test_neg_5050_500: "-5,05", "-5,00",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_dec_rounding!(dec_round_norm_25_should_return_rounded_decimal,
             |t: Decimal| operations_round::dec_round_norm25(t),
             test_pos_5125_525: "5,125", "5,25",
@@ -587,7 +574,6 @@ mod operations_tests {
             test_neg_2050_200: "-2,050", "-2,00",
             test_neg_5050_500: "-5,050", "-5,00",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_dec_rounding!(dec_round_norm_01_should_return_rounded_decimal,
             |t: Decimal| operations_round::dec_round_norm01(t),
             test_pos_5555_556: "5,555", "5,56",

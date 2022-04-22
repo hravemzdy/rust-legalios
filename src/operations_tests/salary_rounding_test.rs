@@ -27,7 +27,6 @@ mod operations_tests {
         }
     }
 
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_salary_rounding!(hours_to_half_hours_up_should_return_rounded_decimal,
         |x: &dyn IPropsSalary, t: Decimal| {x.hours_to_half_hours_up(t)},
             test_pos_5125_550: "5,125", "5,50",
@@ -91,7 +90,6 @@ mod operations_tests {
             test_neg_205_250: "-2,05", "-2,50",
             test_neg_505_550: "-5,05", "-5,50",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_salary_rounding!(hours_to_quart_hours_up_should_return_rounded_decimal,
         |x: &dyn IPropsSalary, t: Decimal| {x.hours_to_quart_hours_up(t)},
             test_pos_5125_525: "5,125", "5,25",
@@ -175,7 +173,6 @@ mod operations_tests {
             test_neg_2050_225: "-2,050", "-2,25",
             test_neg_5050_525: "-5,050", "-5,25",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_salary_rounding!(hours_to_half_hours_down_should_return_rounded_decimal,
         |x: &dyn IPropsSalary, t: Decimal| {x.hours_to_half_hours_down(t)},
             test_pos_5125_500: "5,125", "5,00",
@@ -239,7 +236,6 @@ mod operations_tests {
             test_neg_2050_200: "-2,05", "-2,00",
             test_neg_5050_500: "-5,05", "-5,00",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_salary_rounding!(hours_to_quart_hours_down_should_return_rounded_decimal,
         |x: &dyn IPropsSalary, t: Decimal| {x.hours_to_quart_hours_down(t)},
             test_pos_5125_500: "5,125", "5,00",
@@ -323,7 +319,6 @@ mod operations_tests {
             test_neg_2050_200: "-2,050", "-2,00",
             test_neg_5050_500: "-5,050", "-5,00",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_salary_rounding!(hours_to_half_hours_norm_should_return_rounded_decimal,
         |x: &dyn IPropsSalary, t: Decimal| {x.hours_to_half_hours_norm(t)},
             test_pos_5125_500: "5,125", "5,00",
@@ -387,7 +382,6 @@ mod operations_tests {
             test_neg_2050_200: "-2,05", "-2,00",
             test_neg_5050_500: "-5,05", "-5,00",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_salary_rounding!(hours_to_quart_hours_norm_should_return_rounded_decimal,
         |x: &dyn IPropsSalary, t: Decimal| {x.hours_to_quart_hours_norm(t)},
             test_pos_5125_525: "5,125", "5,25",
@@ -471,7 +465,6 @@ mod operations_tests {
             test_neg_2050_200: "-2,050", "-2,00",
             test_neg_5050_500: "-5,050", "-5,00",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_salary_rounding!(money_to_round_down_should_return_rounded_decimal,
         |x: &dyn IPropsSalary, t: Decimal| {x.money_to_round_down(t)},
             test_pos_5555_555: "5,555", "5,55",
@@ -495,7 +488,6 @@ mod operations_tests {
             test_neg_2005_200: "-2,005", "-2,00",
             test_neg_5005_500: "-5,005", "-5,00",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_salary_rounding!(money_to_round_up_should_return_rounded_decimal,
         |x: &dyn IPropsSalary, t: Decimal| {x.money_to_round_up(t)},
             test_pos_5555_556: "5,555", "5,56",
@@ -519,7 +511,6 @@ mod operations_tests {
             test_neg_2005_201: "-2,005", "-2,01",
             test_neg_5005_501: "-5,005", "-5,01",
     );
-    #[macro_use(crate::test_dec_rounding)]
     crate::test_salary_rounding!(money_to_round_norm_should_return_rounded_decimal,
         |x: &dyn IPropsSalary, t: Decimal| {x.money_to_round_norm(t)},
             test_pos_5555_556: "5,555", "5,56",

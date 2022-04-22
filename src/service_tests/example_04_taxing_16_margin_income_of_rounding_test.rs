@@ -2,7 +2,6 @@
 
 mod service_tests {
     //#[cfg(test_report)]
-    #[macro_use(crate::test_examples_int_taxing)]
     crate::report_test_examples_int_taxing!(
         test_examples_report,
         taxing_16,
@@ -12,7 +11,6 @@ mod service_tests {
         2022
     );
 
-    #[macro_use(crate::test_examples_log_int_taxing)]
     crate::test_examples_log_int_taxing! (test_log_examples_2010_2022, "04_Taxing_16_MarginIncomeOfRounding", |x: &BoxTaxingProps| {x.margin_income_of_rounding()},
         test_examples_2010: 2010,
         [

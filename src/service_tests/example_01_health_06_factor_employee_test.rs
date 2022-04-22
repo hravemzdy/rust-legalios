@@ -2,7 +2,6 @@
 
 mod service_tests {
     //#[cfg(test_report)]
-    #[macro_use(crate::report_test_examples_dec_health)]
     crate::report_test_examples_dec_health!(
         test_examples_report,
         health_06,
@@ -12,7 +11,6 @@ mod service_tests {
         2022
     );
 
-    #[macro_use(crate::test_examples_log_dec_health)]
     crate::test_examples_log_dec_health! (test_log_examples_2010_2022, "01_Health_06_FactorEmployee", |x: &BoxHealthProps| {x.factor_employee()},
         test_examples_2010: 2010,
         [

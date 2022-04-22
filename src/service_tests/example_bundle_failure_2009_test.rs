@@ -35,7 +35,6 @@ pub mod service_tests {
         }
     }
 
-    #[macro_use(crate::test_examples_bundle)]
     crate::test_examples_bundle!(test_examples_bundle_failure_2009,
             bundle_failure_test_period_2009_01: 2009, 1,
             bundle_failure_test_period_2009_02: 2009, 2,

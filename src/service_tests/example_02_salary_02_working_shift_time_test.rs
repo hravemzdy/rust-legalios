@@ -2,7 +2,6 @@
 
 mod service_tests {
     //#[cfg(test_report)]
-    #[macro_use(crate::report_test_examples_int_salary)]
     crate::report_test_examples_int_salary!(
         test_examples_report,
         salary_02,
@@ -12,7 +11,6 @@ mod service_tests {
         2022
     );
 
-    #[macro_use(crate::test_examples_log_int_salary)]
     crate::test_examples_log_int_salary! (test_log_examples_2010_2022, "02_Salary_02_WorkingShiftTime", |x: &BoxSalaryProps| {x.working_shift_time()},
         test_examples_2010: 2010,
         [
